@@ -176,3 +176,25 @@ Visit http://localhost:3000
 
 
 
+🔒 Security Considerations
+
+Private keys are kept securely using .env and never exposed on frontend
+
+Wallet actions (registering) must be confirmed via MetaMask
+
+File content is not stored on blockchain, only metadata and hashes
+
+💡 Future Improvements
+
+End-to-end file comparison
+
+Digital signatures & certificates
+
+ENS integration for human-readable identities
+
+zkProofs for private verification
+
+👨‍💻 Author
+Created by Mohammadamin Norouzi as a university blockchain project.
+
+Feel free to contribute or fork!
