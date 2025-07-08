@@ -79,8 +79,8 @@ A full-stack decentralized application (DApp) that allows users to:
 
 ```
 # Clone the project
-git clone https://github.com/your-username/your-repo.git
-cd your-repo
+git clone https://github.com/Amin-Nz/Decentralized-File-Hash-Verification-Certification-Using-Blockchain-and-IPFS.git
+cd Decentralized-File-Hash-Verification-Certification-Using-Blockchain-and-IPFS
 
 # Install frontend dependencies
 cd frontend
@@ -167,9 +167,9 @@ Visit http://localhost:3000
 
 /tx/:hash: Show blockchain-verified record using tx hash only
 
+---
 
-
-🔒 Security Considerations
+##🔒 Security Considerations
 
 Private keys are kept securely using .env and never exposed on frontend
 
@@ -177,7 +177,9 @@ Wallet actions (registering) must be confirmed via MetaMask
 
 File content is not stored on blockchain, only metadata and hashes
 
-💡 Future Improvements
+---
+
+##💡 Future Improvements
 
 End-to-end file comparison
 
@@ -187,7 +189,10 @@ ENS integration for human-readable identities
 
 zkProofs for private verification
 
-👨‍💻 Author
+---
+
+##👨‍💻 Author
+
 Created by Mohammadamin Norouzi as a university blockchain project.
 
 Feel free to contribute or fork!
