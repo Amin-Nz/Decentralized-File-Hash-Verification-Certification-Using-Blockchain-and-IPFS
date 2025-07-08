@@ -84,7 +84,7 @@ Live preview: _(Insert your deployed app link here)_
 
 ## ⚙️ Local Setup
 
-```bash
+```
 # Clone the project
 git clone https://github.com/your-username/your-repo.git
 cd your-repo
@@ -96,35 +96,44 @@ npm install
 # Install blockchain dependencies
 cd ../blockchain
 npm install
-```bash
+
+```
 
 Create a .env.local file in frontend/ and add:
 
+```
 NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
 NEXT_PUBLIC_SUPABASE_ANON_KEY=your_anon_key
 NEXT_PUBLIC_SEPOLIA_RPC_URL=https://sepolia.infura.io/v3/YOUR_PROJECT_ID
 NEXT_PUBLIC_CONTRACT_ADDRESS=your_deployed_contract_address
 
+```
+
+
 For blockchain/.env:
 
+```
 PRIVATE_KEY=your_wallet_private_key
 SEPOLIA_RPC_URL=https://sepolia.infura.io/v3/YOUR_PROJECT_ID
 
-**Smart Contract Deployment**
+```
 
+**Smart Contract Deployment**
+```
 cd blockchain
 npx hardhat compile
-
+```
 # Deploy to Sepolia
+```
 npx hardhat run scripts/deploy.js --network sepolia
-
+```
 Once deployed, update NEXT_PUBLIC_CONTRACT_ADDRESS in .env.local.
 
 **Running the Frontend**
-
+```
 cd frontend
 npm run dev
-
+```
 Visit http://localhost:3000
 
 **Usage**
