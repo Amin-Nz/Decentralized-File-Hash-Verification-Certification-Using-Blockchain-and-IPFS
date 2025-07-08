@@ -129,6 +129,50 @@ npm run dev
 ```
 Visit http://localhost:3000
 
+---
+
+
+## 🐳 Docker Deployment
+
+You can run the entire application using Docker for easier setup and consistency.
+
+### Step 1: Build the Docker Image
+
+From the `frontend/` directory:
+
+```bash
+docker build -t filehash-dapp .
+```
+
+**Step 2: Run the Container**
+```
+docker run -p 3000:3000 --env-file .env.local filehash-dapp
+```
+
+The app will be available at http://localhost:3000
+
+Make sure your .env.local file exists inside frontend/ and contains the required environment variables.
+
+**Optional: Docker Compose**
+You can also use Docker Compose if you want to include additional services like a local Supabase instance or reverse proxy (optional).
+```
+# docker-compose.yml (if needed)
+version: '3.8'
+
+services:
+  frontend:
+    build: ./frontend
+    ports:
+      - "3000:3000"
+    env_file:
+      - ./frontend/.env.local
+
+```
+
+Run with:
+```
+docker compose up --build
+```
 # Usage
 
 **Upload & Hash**
@@ -169,7 +213,7 @@ Visit http://localhost:3000
 
 ---
 
-##🔒 Security Considerations
+## 🔒 Security Considerations
 
 Private keys are kept securely using .env and never exposed on frontend
 
@@ -179,7 +223,7 @@ File content is not stored on blockchain, only metadata and hashes
 
 ---
 
-##💡 Future Improvements
+## 💡 Future Improvements
 
 End-to-end file comparison
 
@@ -191,7 +235,7 @@ zkProofs for private verification
 
 ---
 
-##👨‍💻 Author
+## 👨‍💻 Author
 
 Created by Mohammadamin Norouzi as a university blockchain project.
 
