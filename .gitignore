@@ -1,0 +1,21 @@
+# Node.js
+node_modules/
+.env
+.next/
+dist/
+out/
+.DS_Store
+
+# Hardhat
+artifacts/
+cache/
+typechain/
+coverage/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS
+Thumbs.db
