@@ -96,7 +96,7 @@ npm install
 # Install blockchain dependencies
 cd ../blockchain
 npm install
-
+```bash
 
 Create a .env.local file in frontend/ and add:
 
