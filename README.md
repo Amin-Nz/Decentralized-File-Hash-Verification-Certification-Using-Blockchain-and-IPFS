@@ -11,7 +11,6 @@ A full-stack decentralized application (DApp) that allows users to:
 
 ## 📚 Table of Contents
 
-- [Demo](#demo)
 - [Features](#features)
 - [Technologies Used](#technologies-used)
 - [Prerequisites](#prerequisites)
@@ -23,12 +22,6 @@ A full-stack decentralized application (DApp) that allows users to:
 - [Environment Variables](#environment-variables)
 - [Security Considerations](#security-considerations)
 - [License](#license)
-
----
-
-## 🚀 Demo
-
-Live preview: _(Insert your deployed app link here)_
 
 ---
 
@@ -136,7 +129,7 @@ npm run dev
 ```
 Visit http://localhost:3000
 
-**Usage**
+# Usage
 
 **Upload & Hash**
 
